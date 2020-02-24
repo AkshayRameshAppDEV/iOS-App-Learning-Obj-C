@@ -31,6 +31,19 @@
     self.activityInd.hidesWhenStopped=YES;
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    
+    blockDefine blockVar;
+    
+    blockVar=^{
+        NSLog(@"Hello");
+        NSLog(@"Second Line");
+        
+    };
+    
+    blockVar();
+}
+
 
 - (IBAction)btnAction:(id)sender {
     

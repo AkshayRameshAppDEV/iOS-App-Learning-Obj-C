@@ -10,5 +10,7 @@
 
 @interface ViewController : UIViewController<UITextFieldDelegate>
 
+typedef void (^blockDefine) ();
+
 @end
 
